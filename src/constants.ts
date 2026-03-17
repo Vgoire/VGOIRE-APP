@@ -750,7 +750,24 @@ export const SERVICES: Service[] = [
           { question: "¿Cómo puedo solicitar una traducción certificada?", answer: "Puede solicitar un presupuesto directamente a través de nuestra integración de WhatsApp o mediante la sección 'Traducciones Certificadas' en la aplicación." },
           { question: "¿Son seguras las reservas de viaje?", answer: "Sí, todas las reservas se gestionan a través de nuestros socios de confianza como Flytour y Oner Travel, garantizando los más altos estándares de seguridad." },
           { question: "¿Qué idiomas admiten?", answer: "Actualmente admitimos 18 idiomas globales, incluidos inglés, español, portugués, chino, hebreo, árabe y más." },
-          { question: "¿Cómo reservo un crucero de lujo?", answer: "Visite la sección 'Cruceros' para explorar nuestra selección curada de viajes de lujo impulsados por Qualitours." }
+          { question: "¿Cómo reservo un crucero de lujo?", answer: "Visite la sección 'Cruceros' para explorar nuestra selección curada de viajes de lujo impulsados por Qualitours." },
+          { question: "¿Qué es la Apostilla de la Haya?", answer: "La Apostilla es un certificado de autenticidad emitido por los países firmantes del Convenio de la Haya, que se adjunta a un documento público para dar fe de su origen (firma, cargo del funcionario público, sello de la institución). Este documento público apostillado será presentado en otro país, también firmante del Convenio, ya que la Apostilla solo es válida entre países signatarios." },
+          { question: "¿Cuáles son los efectos de la Apostilla?", answer: "La Apostilla solo certifica el origen del documento público, no el documento en sí. En otras palabras, certifica la autenticidad de la firma, la función del signatario y, si corresponde, la autenticidad del sello. No certifica el contenido del documento ni debe usarse para reconocimiento dentro del país emisor." },
+          { question: "¿A qué tipos de documentos se aplica la Apostilla?", answer: "Solo se pueden apostillar documentos públicos o privados autenticados previamente por un notario o autoridad pública competente. Incluye documentos judiciales, administrativos, actas notariales y declaraciones oficiales." },
+          { question: "¿A qué documentos NO se aplica la Apostilla?", answer: "No se aplica a documentos emitidos por agentes diplomáticos o consulares, ni a documentos administrativos relacionados con operaciones comerciales o aduaneras." },
+          { question: "¿Necesito una Apostilla cada vez que presente un documento en el extranjero?", answer: "No necesariamente. Algunos países tienen tratados con Brasil que eximen de la legalización, como Francia. Siempre se recomienda consultar con la representación del país de destino." },
+          { question: "¿Cuántos países forman parte del Convenio de la Haya?", answer: "Hay 127 países hasta el momento." },
+          { question: "¿El documento apostillado debe ser original?", answer: "No. Las copias certificadas también pueden ser apostilladas." },
+          { question: "¿Cómo funciona el proceso de apostillado en la práctica?", answer: "Para obtener la Apostilla, lleve el documento a una notaría autorizada. El proceso incluye una copia física y una electrónica registrada en un sistema dedicado. La autenticidad se puede verificar mediante un código QR." },
+          { question: "¿Las traducciones de documentos brasileños deben ser notarizadas?", answer: "Depende de los requisitos del país de destino. Es importante contactar a la representación del país donde se presentará el documento." },
+          { question: "¿Es obligatorio notarizar la firma electrónica de un traductor jurado?", answer: "No. Todos los traductores jurados tienen fe pública, por lo que sus firmas electrónicas no necesitan notarización." },
+          { question: "¿La traducción debe hacerse antes o después de la apostilla?", answer: "Generalmente, el documento se traduce primero y luego ambos (original y traducción) se apostillan. Para documentos presentados en Brasil, la traducción debe hacerse en Brasil." },
+          { question: "¿Es necesaria una Apostilla para la traducción y otra para el original?", answer: "Deben emitirse dos apostillas: una para el documento original y otra para la traducción, ya que son documentos independientes." },
+          { question: "¿Son válidos en Brasil los documentos extranjeros apostillados y traducidos fuera?", answer: "En Brasil, los documentos extranjeros solo son válidos con una traducción jurada realizada en Brasil, según lo regulado por el Código de Procedimiento Civil y otros decretos." },
+          { question: "¿Puedo buscar hoteles internacionales en la plataforma de VGOIRE?", answer: "En la plataforma solo puede buscar hoteles nacionales (Brasil). Para hoteles internacionales, contacte a un agente de VGOIRE al +55-69-9-8123-2697." },
+          { question: "¿Puedo buscar autos internacionales en la plataforma?", answer: "Solo puede buscar autos nacionales en Brasil. Para alquileres internacionales, contacte a nuestro agente vía WhatsApp." },
+          { question: "¿Cómo realizo una compra en la plataforma de VGOIRE?", answer: "1) Seleccione el servicio. 2) Haga clic en PAGOS. 3) Regístrese con su email y verifique el código de 6 dígitos. 4) Complete sus datos personales. 5) Realice el pago. 6) Reciba su voucher por email." },
+          { question: "Información sobre el curso de español.", answer: "Aprenderá con un instructor nativo de Cuba (dueño de VGOIRE). El curso dura 2 años, con clases online de 1.5h dos veces por semana. Utilizamos un método dinámico con materiales de España y preparamos para exámenes DELE (niveles A1 a C2)." }
         ]
       },
       pt: { 
@@ -761,29 +778,212 @@ export const SERVICES: Service[] = [
           { question: "Como posso solicitar uma tradução juramentada?", answer: "Você pode solicitar um orçamento diretamente através da nossa integração com o WhatsApp ou pela seção 'Traduções Juramentadas' no aplicativo." },
           { question: "As reservas de viagens são seguras?", answer: "Sim, todas as reservas são feitas através de nossos parceiros de confiança, como Flytour e Oner Travel, garantindo os mais altos padrões de segurança." },
           { question: "Quais idiomas vocês suportam?", answer: "Atualmente suportamos 18 idiomas globais, incluindo inglês, espanhol, português, chinês, hebraico, árabe e muito mais." },
-          { question: "Como faço para reservar um cruzeiro de luxo?", answer: "Visite a seção 'Cruzeiros' para explorar nossa seleção curada de viagens de luxo operadas pela Qualitours." }
+          { question: "Como faço para reservar um cruzeiro de luxo?", answer: "Visite a seção 'Cruzeiros' para explorar nossa seleção curada de viagens de luxo operadas pela Qualitours." },
+          { question: "O que é a Apostila da Haia?", answer: "A Apostila é um certificado de autenticidade emitido por países signatários da Convenção da Haia, colocado em um documento público para atestar sua origem (assinatura, cargo do agente público, selo ou carimbo da instituição). Este documento público apostilado será apresentado em outro país também signatário." },
+          { question: "Quais são os efeitos da Apostila?", answer: "A Apostila apenas certifica a origem do documento público, não o documento em si. Ou seja, certifica a autenticidade da assinatura, a função do signatário e a autenticidade do selo ou carimbo. Não certifica o conteúdo do documento." },
+          { question: "A que tipos de documentos a Apostila se aplica?", answer: "Apenas documentos públicos ou de natureza particular previamente autenticados por tabelião ou autoridade pública competente. Exemplos: documentos judiciais, administrativos, atos notariais e declarações oficiais." },
+          { question: "A que documentos a Apostila NÃO se aplica?", answer: "Não se aplica a documentos emitidos por agentes diplomáticos ou consulares, nem a documentos administrativos relacionados a operações comerciais ou alfandegárias." },
+          { question: "Preciso de Apostila sempre que apresentar um documento no exterior?", answer: "Não necessariamente. Alguns países têm tratados com o Brasil que dispensam a legalização, como a França. Recomenda-se sempre consultar a representação do país de destino." },
+          { question: "Quantos países fazem parte da Convenção da Haia?", answer: "Existem 127 países até o momento." },
+          { question: "O documento apostilado precisa ser original?", answer: "Não. Cópias autenticadas também podem ser apostiladas." },
+          { question: "Como funciona o processo de apostilamento na prática?", answer: "Basta levar o documento a um dos cartórios autorizados. O processo inclui uma via física e uma eletrônica registrada no sistema do CNJ. A autenticidade pode ser verificada via QR Code." },
+          { question: "As traduções de documentos brasileiros precisam ser reconhecidas em cartório?", answer: "Depende das exigências do país onde o documento será apresentado. É importante contatar a representação do país de destino." },
+          { question: "É obrigatório reconhecer a assinatura eletrônica do tradutor juramentado?", answer: "Não. Todos os tradutores juramentados possuem fé pública. Portanto, suas assinaturas eletrônicas não precisam de reconhecimento de firma." },
+          { question: "A tradução deve ser feita antes ou depois da apostila?", answer: "Geralmente, traduz-se o documento primeiro e depois apostila-se ambos (original e tradução). Para documentos apresentados no Brasil, a tradução juramentada deve ser feita no Brasil." },
+          { question: "É necessário uma Apostila para a tradução e outra para o original?", answer: "Devem ser emitidas duas apostilas: uma para o original e outra para a tradução, pois são documentos independentes." },
+          { question: "Documentos estrangeiros apostilados e traduzidos fora são válidos no Brasil?", answer: "No Brasil, documentos estrangeiros só têm validade com tradução juramentada feita no Brasil, conforme regulado pelo Código de Processo Civil e Decreto 13.609/1943." },
+          { question: "Posso pesquisar hotéis internacionais na plataforma de viagens VGOIRE?", answer: "Na plataforma, você só pode pesquisar hotéis nacionais (Brasil). Para hotéis internacionais, entre em contato com um agente VGOIRE pelo número: +55-69-9-8123-2697." },
+          { question: "Posso pesquisar carros internacionais na plataforma VGOIRE?", answer: "Somente carros nacionais no Brasil. Para carros internacionais, contate nosso agente de viagens via WhatsApp." },
+          { question: "Como comprar na plataforma VGOIRE?", answer: "1) Selecione o serviço. 2) Clique em PAGAMENTOS. 3) Registre seu e-mail e valide com o código de 6 dígitos enviado. 4) Preencha seus dados pessoais para o voucher. 5) Escolha a forma de pagamento e finalize. 6) Receba os vouchers no seu e-mail." },
+          { question: "Informações sobre o curso de espanhol.", answer: "Aulas com instrutor nativo de Cuba (proprietário da VGOIRE). O curso dura cerca de 2 anos, com duas aulas semanais de 1,5h via Google Meet ou Teams. Oferecemos treinamento para exames DELE em todos os níveis (A1 a C2)." }
         ]
       },
       zh: { 
         title: '问题与解答', 
         description: '查找有关 VGOIRE 服务的常见问题解答。',
         faqItems: [
-          { question: "VGOIRE 的主要使命是什么？", answer: "VGOIRE 致力于提供优质的全球解决方案，以卓越和安全的方式弥合沟通和旅行差距。" },
-          { question: "如何申请认证翻译？", answer: "您可以直接通过我们的 WhatsApp 集成或通过应用程序中的“认证翻译”部分请求报价。" },
-          { question: "旅行预订安全吗？", answer: "是的，所有预订均通过 Flytour 和 Oner Travel 等值得信赖的合作伙伴处理，确保最高安全标准。" },
-          { question: "你们支持哪些语言？", answer: "我们目前支持 18 种全球语言，包括英语、西班牙语、葡萄牙语、中文、希伯来语、阿拉伯语等。" },
-          { question: "如何预订豪华邮轮？", answer: "访问“邮轮”部分，探索我们由 Qualitours 提供支持的精选豪华航程。" }
+          { 
+            question: "VGOIRE 的主要使命是什么？", 
+            answer: "VGOIRE 致力于提供优质的全球解决方案，以卓越和安全的方式弥合沟通和旅行差距。"
+          },
+          { 
+            question: "如何申请认证翻译？", 
+            answer: "您可以直接通过我们的 WhatsApp 集成或通过应用程序中的“认证翻译”部分请求报价。"
+          },
+          { 
+            question: "旅行预订安全吗？", 
+            answer: "是的，所有预订均通过 Flytour 和 Oner Travel 等值得信赖的合作伙伴处理，确保最高安全标准。"
+          },
+          { 
+            question: "你们支持哪些语言？", 
+            answer: "我们目前支持 18 种全球语言，包括英语、西班牙语、葡萄牙语、中文、希伯来语、阿拉伯语等。"
+          },
+          { 
+            question: "如何预订豪华邮轮？", 
+            answer: "访问“邮轮”部分，探索我们由 Qualitours 提供支持的精选豪华航程。"
+          },
+          { 
+            question: "什么是海牙认证（Apostille）？", 
+            answer: "海牙认证是由《海牙公约》缔约国签发的真实性证书，附在公共文件上以证明其来源（签名、公职人员身份、机构印章）。该文件将在另一个同样是缔约国的国家出示，因为海牙认证仅在缔约国之间有效。"
+          },
+          { 
+            question: "海牙认证的作用是什么？", 
+            answer: "海牙认证仅证明公共文件的来源，而非文件本身的内容。换言之，它证明了签名（公证）的真实性、签署人的身份以及所附印章的真实性。它不证明文件内容，也不应在签发国国内使用。"
+          },
+          { 
+            question: "海牙认证适用于哪些类型的文件？", 
+            answer: "仅限公共文件或经公证处/主管部门认证的具有公信力的私人文件。包括：司法机关文件、行政文件、公证书、官方声明（如注册证明或签名认证）。各国可自行定义符合认证条件的文件。"
+          },
+          { 
+            question: "海牙认证不适用于哪些文件？", 
+            answer: "不适用于外交或领事机构签发的文件，也不适用于与商业或海关业务直接相关的行政文件（若现有规则已免除其法律化）。此外，不适用于在非海牙公约缔约国出示的文件。"
+          },
+          { 
+            question: "我每次在国外出示文件时都需要海牙认证吗？", 
+            answer: "不一定。某些国家（如法国）与巴西签有协议，免除领事认证或海牙认证。建议始终咨询目标国家的代表机构。"
+          },
+          { 
+            question: "目前有多少个国家加入了《海牙公约》？", 
+            answer: "到目前为止共有 127 个国家。"
+          },
+          { 
+            question: "经海牙认证的文件必须是原件吗？", 
+            answer: "不一定。经过认证的副本也可以办理海牙认证。"
+          },
+          { 
+            question: "海牙认证的具体流程是怎样的？", 
+            answer: "将文件带到授权的公证处即可。流程包括纸质证书（附在原件上）和电子注册。外国机构可通过文件上的二维码（QR Code）验证巴西签发的海牙认证真实性。同样，在国外办理的海牙认证在巴西也具有同等效力。"
+          },
+          { 
+            question: "巴西文件的翻译件需要公证吗？", 
+            answer: "这取决于目标国家的要求。不同国家可能有不同的程序，因此请务必联系目标国家的代表机构进行确认。"
+          },
+          { 
+            question: "宣誓翻译人员的电子签名必须经过公证吗？", 
+            answer: "不需要。宣誓翻译人员具有公共信誉，因此其电子签名无需额外公证。"
+          },
+          { 
+            question: "翻译应该在海牙认证之前还是之后进行？", 
+            answer: "通常先翻译文件，然后对原件和翻译件同时办理海牙认证。请注意，若文件要在巴西机构出示，认证翻译必须在巴西境内完成。"
+          },
+          { 
+            question: "关于翻译，是需要为翻译件和原件分别办理海牙认证，还是办一份就够了？", 
+            answer: "由于它们是独立的文件，通常需要办理两份海牙认证：一份给原件，一份给翻译件。建议咨询目标国家是否接受巴西翻译人员的翻译。"
+          },
+          { 
+            question: "在国外办理海牙认证并翻译成葡语的文件在巴西有效吗？", 
+            answer: "在巴西，外国文件（即使有海牙认证）必须附有在巴西境内完成的宣誓翻译件才具有法律效力。这受巴西民事诉讼法等多项法律监管。"
+          },
+          { 
+            question: "我可以在 VGOIRE 旅游平台上搜索国内和国际酒店吗？", 
+            answer: "在 VGOIRE 平台上，您只能搜索巴西国内酒店。如需预订国际酒店，请通过公司业务电话联系我们的旅行代理：+55-69-9-8123-2697。"
+          },
+          { 
+            question: "我可以在 VGOIRE 旅游平台上搜索国内和国际汽车租赁吗？", 
+            answer: "在该平台上只能搜索巴西国内租车服务。如需国际租车，请联系 VGOIRE 旅行代理。"
+          },
+          { 
+            question: "如果在平台上发现了优惠，该如何购买？", 
+            answer: "1) 选择所需服务。2) 点击“支付（PAYMENTS）”。3) 输入邮箱并使用收到的 6 位验证码注册。4) 填写个人信息以生成凭证。5) 完成支付。6) 您将立即在邮箱中收到服务凭证。"
+          },
+          { 
+            question: "关于西班牙语课程的信息。", 
+            answer: "由来自古巴的母语教师（VGOIRE 创始人）授课。学制约两年，每周两次 1.5 小时网课（Meet/Teams）。采用西班牙现代教材，提供个性化教学，并涵盖 DELE 考试（A1 到 C2 级别）的专业培训。"
+          }
         ]
       },
       he: { 
         title: 'שאלות ותשובות', 
         description: 'מצא תשובות לשאלות הנפוצות ביותר על שירותי VGOIRE.',
         faqItems: [
-          { question: "מהי המשימה העיקרית של VGOIRE?", answer: "VGOIRE מוקדשת למתן פתרונות גלובליים מובחרים, תוך גישור על פערי תקשורת ונסיעות במצוינות ובביטחון." },
-          { question: "כיצד אוכל לבקש תרגום מוסמך?", answer: "ניתן לבקש הצעת מחיר ישירות דרך שילוב ה-WhatsApp שלנו או דרך מדור 'תרגומים מוסמכים' באפליקציה." },
-          { question: "האם הזמנות הנסיעות מאובטחות?", answer: "כן, כל ההזמנות מטופלות באמצעות השותפים המהימנים שלנו כמו Flytour ו-Oner Travel, מה שמבטיח את תקני האבטחה הגבוהים ביותר." },
-          { question: "באילו שפות אתם תומכים?", answer: "אנו תומכים כיום ב-18 שפות גלובליות, כולל אנגלית, ספרדית, פורטוגזית, סינית, עברית, ערבית ועוד." },
-          { question: "איך מזמינים שייט יוקרתי?", answer: "בקר במדור 'שייט' כדי לחקור את מבחר הפלגות היוקרה שלנו המופעלות על ידי Qualitours." }
+          { 
+            question: "מהי המשימה העיקרית של VGOIRE?", 
+            answer: "VGOIRE מוקדשת למתן פתרונות גלובליים מובחרים, תוך גישור על פערי תקשורת ונסיעות במצוינות ובביטחון." 
+          },
+          { 
+            question: "כיצד אוכל לבקש תרגום מוסמך?", 
+            answer: "ניתן לבקש הצעת מחיר ישירות דרך שילוב ה-WhatsApp שלנו או דרך מדור 'תרגומים מוסמכים' באפליקציה." 
+          },
+          { 
+            question: "האם הזמנות הנסיעות מאובטחות?", 
+            answer: "כן, כל הזמנות מטופלות באמצעות השותפים המהימנים שלנו כמו Flytour ו-Oner Travel, מה שמבטיח את תקני האבטחה הגבוהים ביותר." 
+          },
+          { 
+            question: "באילו שפות אתם תומכים?", 
+            answer: "אנו תומכים כיום ב-18 שפות גלובליות, כולל אנגלית, ספרדית, פורטוגזית, סינית, עברית, ערבית ועוד." 
+          },
+          { 
+            question: "איך מזמינים שייט יוקרתי?", 
+            answer: "בקר במדור 'שייט' כדי לחקור את מבחר הפלגות היוקרה שלנו המופעלות על ידי Qualitours." 
+          },
+          {
+            question: "מה זה אפוסטיל האג (Hague Apostille)?",
+            answer: "אפוסטיל הוא תעודת אימות המונפקת על ידי מדינות החתומות על אמנת האג, המוצמדת למסמך ציבורי כדי להעיד על מקורו (חתימה, תפקיד פקיד הציבור, חותמת או חותם המוסד). מסמך זה תקף רק בין המדינות החברות באמנה."
+          },
+          {
+            question: "מהן ההשפעות של האפוסטיל?",
+            answer: "האפוסטיל מאשר רק את מקור המסמך הציבורי (אמיתות החתימה והחותם), ולא את תוכן המסמך עצמו. אין להשתמש בו להכרה בתוך המדינה בה הונפק."
+          },
+          {
+            question: "על אילו סוגי מסמכים חל האפוסטיל?",
+            answer: "ניתן לאפוסטל רק מסמכים ציבוריים או מסמכים פרטיים שאושרו על ידי נוטריון או רשות מוסמכת. זה כולל מסמכים מנהליים, פעולות נוטריוניות והצהרות רשמיות."
+          },
+          {
+            question: "על אילו מסמכים האפוסטיל לא חל?",
+            answer: "האמנה אינה חלה על מסמכים שהונפקו על ידי סוכנים דיפלומטיים או קונסולריים, או מסמכים מנהליים הקשורים ישירות לפעולות מסחריות או מכס."
+          },
+          {
+            question: "האם אני צריך אפוסטיל בכל פעם שאני מציג מסמך בחו\"ל?",
+            answer: "לא בהכרח. למדינות מסוימות (כמו צרפת) יש הסכמים עם ברזיל המוותרים על הצורך בלגליזציה. תמיד כדאי לבדוק מול נציגות מדינת היעד."
+          },
+          {
+            question: "כמה מדינות חברות כיום באמנת האג?",
+            answer: "ישנן 127 מדינות חברות נכון לעכשיו."
+          },
+          {
+            question: "האם המסמך המאופוסטל חייב להיות מקורי?",
+            answer: "לא. ניתן לאפוסטל גם העתקים מאושרים (Certified Copies)."
+          },
+          {
+            question: "איך עובד תהליך האפוסטיל בפועל?",
+            answer: "יש לקחת את המסמך למשרד נוטריון מורשה. התהליך כולל הנפקת אישור פיזי ורישום דיגיטלי במערכת. ניתן לאמת את אמיתות האישור באמצעות קוד QR המופיע עליו."
+          },
+          {
+            question: "האם תרגומים של מסמכים ברזילאיים צריכים אישור נוטריון?",
+            answer: "זה תלוי בדרישות המדינה בה המסמך יוצג. מומלץ ליצור קשר עם נציגות מדינת היעד כדי לוודא את הנהלים הספציפיים."
+          },
+          {
+            question: "האם חובה לאשר חתימה אלקטרונית של מתרגם מושבע?",
+            answer: "לא. למתרגמים מושבעים יש 'נאמנות ציבורית' (Public Faith), ולכן חתימתם האלקטרונית אינה דורשת אישור נוטריוני נוסף."
+          },
+          {
+            question: "האם התרגום צריך להתבצע לפני או אחרי האפוסטיל?",
+            answer: "בדרך כלל מתרגמים תחילה, ואז מאופוסטלים את המקור והתרגום יחד. למסמכים שיוצגו בברזיל, התרגום חייב להתבצע על ידי מתרגם מושבע בברזיל."
+          },
+          {
+            question: "האם צריך אפוסטיל נפרד לתרגום ולמקור?",
+            answer: "כן, יש להנפיק שני אישורי אפוסטיל: אחד למסמך המקורי ואחד לתרגום המושבע, שכן הם נחשבים למסמכים עצמאיים."
+          },
+          {
+            question: "האם מסמכים זרים שתורגמו בחו\"ל תקפים בברזיל?",
+            answer: "בברזיל, מסמכים זרים תקפים רק אם צורף להם תרגום מושבע שבוצע בתוך ברזיל. הדבר מוסדר בחוק סדר הדין האזרחי הברזילאי."
+          },
+          {
+            question: "האם ניתן לחפש מלונות בינלאומיים בפלטפורמה של VGOIRE?",
+            answer: "בפלטפורמה המקוונת ניתן לחפש מלונות בתוך ברזיל בלבד. למלונות בינלאומיים, יש ליצור קשר עם סוכן VGOIRE במספר: +55-69-9-8123-2697."
+          },
+          {
+            question: "האם ניתן לחפש רכבים להשכרה בחו\"ל בפלטפורמה?",
+            answer: "החיפוש באתר מוגבל לרכבים בתוך ברזיל. להשכרת רכב בינלאומית, אנא פנה לסוכן הנסיעות שלנו ב-WhatsApp."
+          },
+          {
+            question: "איך מבצעים רכישה מאובטחת בפלטפורמת VGOIRE?",
+            answer: "1) בחר שירות. 2) לחץ על PAYMENTS. 3) הירשם עם אימייל והזן את הקוד בן 6 הספרות שיישלח אליך. 4) מלא פרטים אישיים. 5) בצע תשלום וקבל את השוברים מיד במייל."
+          },
+          { 
+            question: "מידע על קורס הספרדית.", 
+            answer: "לימוד ספרדית עם מדריך יליד קובה (בעל החברה). הקורס נמשך כשנתיים, פעמיים בשבוע (1.5 שעות לשיעור) דרך Google Meet או Teams. הכנה למבחני DELE בכל הרמות (A1-C2)." 
+          }
         ]
       },
       ar: { 
