@@ -1,5 +1,12 @@
+// CRITICAL: Check environment BEFORE importing anything else
+// This prevents server startup in development/v0.app
+if (process.env.NODE_ENV !== 'production') {
+  console.error("[v0] ERROR: server.ts should ONLY run in production mode.");
+  console.error("[v0] For development, use: npm run dev");
+  process.exit(1);
+}
+
 import express from "express";
-import { createServer as createViteServer } from "vite";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -7,15 +14,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 async function startServer() {
-  // IMPORTANT: In v0.app and development, server.ts should NOT run
-  // The 'dev' script runs 'vite' directly, NOT 'node server.ts'
-  // This file is only for production builds
-  
-  if (process.env.NODE_ENV !== 'production') {
-    console.error("[ERROR] server.ts should only run in production. Use 'npm run dev' or 'vite' for development.");
-    process.exit(1);
-  }
-
   const app = express();
   const PORT = parseInt(process.env.PORT || "3000");
 
@@ -37,10 +35,7 @@ async function startServer() {
   });
 }
 
-// Only start server if explicitly running this file in production
-if (process.env.NODE_ENV === 'production') {
-  startServer().catch((err) => {
-    console.error("Failed to start server:", err);
-    process.exit(1);
-  });
-}
+startServer().catch((err) => {
+  console.error("Failed to start server:", err);
+  process.exit(1);
+});
