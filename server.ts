@@ -8,8 +8,13 @@ const __dirname = path.dirname(__filename);
 
 async function startServer() {
   const app = express();
-  // Use dynamic port in development (v0.app), fixed port in production
-  const PORT = process.env.NODE_ENV === "production" ? 3000 : (parseInt(process.env.PORT || "5173"));
+  const PORT = parseInt(process.env.PORT || "3000");
+
+  // Skip server startup in v0.app development environment
+  if (process.env.DISABLE_HMR === 'true' && !process.env.NODE_ENV?.includes('production')) {
+    console.log("[v0] Development mode: server.ts skipped, use 'vite' command instead");
+    return;
+  }
 
   // API routes
   app.get("/api/health", (req, res) => {
