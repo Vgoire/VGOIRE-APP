@@ -8,7 +8,8 @@ const __dirname = path.dirname(__filename);
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  // Use dynamic port in development (v0.app), fixed port in production
+  const PORT = process.env.NODE_ENV === "production" ? 3000 : (parseInt(process.env.PORT || "5173"));
 
   // API routes
   app.get("/api/health", (req, res) => {
