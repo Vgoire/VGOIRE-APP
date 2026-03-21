@@ -21,7 +21,8 @@ export interface Service {
 export const WHATSAPP_NUMBER = "5569981232697";
 export const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const TRAVEL_PLATFORM_URL = "https://www.comprarviagem.com.br/vgoirestrips";
-
+export const INSTAGRAM_URL = "https://www.instagram.com/vladimirgoire/";
+export const YOTUBE_URL_TRIPS = "https://www.youtube.com/watch?v=xYgKO7EMWIc";
 
 export const LANGUAGES: { code: Language; name: string; dir: 'ltr' | 'rtl' }[] = [
   { code: 'en', name: 'English', dir: 'ltr' },
@@ -47,7 +48,7 @@ export const LANGUAGES: { code: Language; name: string; dir: 'ltr' | 'rtl' }[] =
 export const UI_STRINGS: Record<Language, any> = {
   en: {
     tagline: "Premium Global Solutions",
-    visitWebsite: "Visit Official Website",
+    visitWebsite: "My Instagram",
     requestQuote: "Request a Quote via WhatsApp",
     accessPlatform: "Access Travel Platform",
     accessPartnersPlatform: "ACCESS  OUR  PARTNERS  PLATFORM  FOR  REFERENCE",
@@ -64,7 +65,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   es: {
     tagline: "Soluciones Globales Premium",
-    visitWebsite: "Visitar Sitio Oficial",
+    visitWebsite: "Mi Instagram",
     requestQuote: "Solicitar Presupuesto por WhatsApp",
     accessPlatform: "Acceder a la Plataforma de Viajes",
     accessPartnersPlatform: "ACCEDER A LA PLATAFORMA DE NUESTROS SOCIOS PARA REFERENCIA",
@@ -81,7 +82,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   pt: {
     tagline: "Soluções Globais Premium",
-    visitWebsite: "Visitar Site Oficial",
+    visitWebsite: "Meu Instagram",
     requestQuote: "Solicitar Orçamento via WhatsApp",
     accessPlatform: "Acessar Plataforma de Viagens",
     accessPartnersPlatform: "ACESSAR A PLATAFORMA DE NOSSOS PARCEIROS PARA REFERÊNCIA",
@@ -98,7 +99,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   zh: {
     tagline: "优质全球解决方案",
-    visitWebsite: "访问官方网站",
+    visitWebsite: "我的 Instagram",
     requestQuote: "通过 WhatsApp 请求报价",
     accessPlatform: "访问旅游平台",
     accessPartnersPlatform: "访问我们的合作伙伴平台以供参考",
@@ -115,7 +116,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   he: {
     tagline: "פתרונות גלובליים פרימיום",
-    visitWebsite: "בקר באתר הרשמי",
+    visitWebsite: "האינסטגרם שלי",
     requestQuote: "בקש הצעת מחיר בוואטסאפ",
     accessPlatform: "גישה לפלטפורמת נסיעות",
     accessPartnersPlatform: "גישה לפלטפורמת השותפים שלנו לעיון",
@@ -132,7 +133,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   ar: {
     tagline: "حلول عالمية متميزة",
-    visitWebsite: "زيارة الموقع الرسمي",
+    visitWebsite: "الإنستغرام الخاص بي",
     requestQuote: "طلب عرض سعر عبر واتساب",
     accessPlatform: "الوصول إلى منصة السفر",
     accessPartnersPlatform: "الوصول إلى منصة شركائنا للمرجع",
@@ -149,7 +150,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   ru: {
     tagline: "Премиальные глобальные решения",
-    visitWebsite: "Посетить официальный сайт",
+    visitWebsite: "Мой Instagram",
     requestQuote: "Запросить расчет в WhatsApp",
     accessPlatform: "Доступ к платформе",
     accessPartnersPlatform: "ДОСТУП К ПЛАТФОРМЕ НАШИХ ПАРТНЕРОВ ДЛЯ СПРАВКИ",
@@ -166,7 +167,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   ro: {
     tagline: "Soluții globale premium",
-    visitWebsite: "Vizitează site-ul oficial",
+    visitWebsite: "Instagramul meu",
     requestQuote: "Solicită o ofertă prin WhatsApp",
     accessPlatform: "Accesează platforma",
     accessPartnersPlatform: "ACCESEAZĂ PLATFORMA PARTENERILOR NOȘTRI PENTRU REFERINȚĂ",
@@ -183,7 +184,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   nl: {
     tagline: "Premium wereldwijde oplossingen",
-    visitWebsite: "Bezoek officiële website",
+    visitWebsite: "Mijn Instagram",
     requestQuote: "Offerte aanvragen via WhatsApp",
     accessPlatform: "Toegang tot platform",
     accessPartnersPlatform: "TOEGANG TOT HET PLATFORM VAN ONZE PARTNERS TER REFERENTIE",
@@ -200,7 +201,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   no: {
     tagline: "Premium globale løsninger",
-    visitWebsite: "Besøk offisiell nettside",
+    visitWebsite: "Min Instagram",
     requestQuote: "Be om tilbud via WhatsApp",
     accessPlatform: "Tilgang til plattform",
     accessPartnersPlatform: "TILGANG TIL VÅRE PARTNERES PLATTFORM FOR REFERANSE",
@@ -217,7 +218,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   hi: {
     tagline: "प्रीमियम वैश्विक समाधान",
-    visitWebsite: "आधिकारिक वेबसाइट पर जाएं",
+    visitWebsite: "मेरा इंस्टाग्राम",
     requestQuote: "WhatsApp के माध्यम से कोट का अनुरोध करें",
     accessPlatform: "प्लेटफॉर्म तक पहुंचें",
     accessPartnersPlatform: "संदर्भ के लिए हमारे भागीदारों के प्लेटफॉर्म तक पहुंचें",
@@ -234,7 +235,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   ja: {
     tagline: "プレミアムなグローバルソリューション",
-    visitWebsite: "公式サイトにアクセス",
+    visitWebsite: "私のInstagram",
     requestQuote: "WhatsAppで見積もりを依頼する",
     accessPlatform: "プラットフォームにアクセス",
     accessPartnersPlatform: "参照用にパートナーのプラットフォームにアクセス",
@@ -251,7 +252,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   fr: {
     tagline: "Solutions globales premium",
-    visitWebsite: "Visiter le site officiel",
+    visitWebsite: "Mon Instagram",
     requestQuote: "Demander un devis via WhatsApp",
     accessPlatform: "Accéder à la plateforme",
     accessPartnersPlatform: "ACCÉDER À LA PLATEFORME DE NOS PARTENAIRES POUR RÉFÉRENCE",
@@ -268,7 +269,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   it: {
     tagline: "Soluzioni globali premium",
-    visitWebsite: "Visita il sito ufficiale",
+    visitWebsite: "Il mio Instagram",
     requestQuote: "Richiedi un preventivo via WhatsApp",
     accessPlatform: "Accedi alla piattaforma",
     accessPartnersPlatform: "ACCEDI ALLA PIATTAFORMA DEI NOSTRI PARTNER PER RIFERIMENTO",
@@ -285,7 +286,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   de: {
     tagline: "Premium-Lösungen weltweit",
-    visitWebsite: "Offizielle Website besuchen",
+    visitWebsite: "Mein Instagram",
     requestQuote: "Angebot per WhatsApp anfordern",
     accessPlatform: "Plattform aufrufen",
     accessPartnersPlatform: "ZUGRIFF AUF DIE PLATTFORM UNSERER PARTNER ZUR REFERENZ",
@@ -302,7 +303,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   ko: {
     tagline: "프리미엄 글로벌 솔루션",
-    visitWebsite: "공식 웹사이트 방문",
+    visitWebsite: "내 Instagram",
     requestQuote: "WhatsApp으로 견적 요청",
     accessPlatform: "플랫폼 접속",
     accessPartnersPlatform: "참고용 파트너 플랫폼 접속",
@@ -319,7 +320,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   fi: {
     tagline: "Premium-tason globaalit ratkaisut",
-    visitWebsite: "Vieraile virallisella verkkosivustolla",
+    visitWebsite: "Instagramini",
     requestQuote: "Pyydä tarjous WhatsAppilla",
     accessPlatform: "Pääsy alustalle",
     accessPartnersPlatform: "PÄÄSY KUMPPANEIDEMME ALUSTALLE VIITTEEKSI",
@@ -336,7 +337,7 @@ export const UI_STRINGS: Record<Language, any> = {
   },
   el: {
     tagline: "Premium παγκόσμιες λύσεις",
-    visitWebsite: "Επισκεφθείτε την επίσημη ιστοσελίδα",
+    visitWebsite: "Το Instagram μου",
     requestQuote: "Ζητήστε προσφορά μέσω WhatsApp",
     accessPlatform: "Πρόσβαση στην πλατφόρμα",
     accessPartnersPlatform: "ΠΡΟΣΒΑΣΗ ΣΤΗΝ ΠΛΑΤΦΟΡΜΑ ΤΩΝ ΣΥΝΕΡΓΑΤΩΝ ΜΑΣ ΓΙΑ ΑΝΑΦΟΡΑ",

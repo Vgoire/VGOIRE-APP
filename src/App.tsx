@@ -18,13 +18,15 @@ import {
 } from 'lucide-react';
 import { 
   SERVICES, 
-  Service, 
-  OFFICIAL_WEBSITE_URL,
+  Service,
   LANGUAGES,
   Language,
   UI_STRINGS,
-  WHATSAPP_BASE_URL
+  WHATSAPP_BASE_URL,
+  INSTAGRAM_URL,
+  YOTUBE_URL_TRIPS
 } from './constants';
+import VideoModal from './videoModal';
 
 // --- Components ---
 
@@ -383,12 +385,30 @@ const ServiceDetail = ({ service, lang, onBack, onLangChange }: { service: Servi
   );
 };
 
-// --- Main App ---
+const getDefaultLanguage = (): Language => {
+  // Pega o idioma padrão do navegador (ex: 'pt-BR' vira 'pt', 'en-US' vira 'en')
+  const browserLang = (navigator.language ?? 'en').split('-')[0];
 
+  // Mapeamento para idiomas cujo código do navegador difere do código usado no app
+  const langAliases: Record<string, Language> = {
+    nb: 'no', // Norueguês Bokmål → 'no'
+    nn: 'no', // Norueguês Nynorsk → 'no'
+  };
+
+  const resolvedLang = langAliases[browserLang] ?? browserLang;
+
+  // Verifica se o idioma detectado está dentro da sua lista de LANGUAGES importada
+  const isSupported = LANGUAGES.some(l => l.code === resolvedLang);
+
+  // Retorna o idioma do dispositivo se for suportado, caso contrário, cai para o padrão 'en'
+  return isSupported ? (resolvedLang as Language) : 'en';
+};
+
+// --- Main App ---
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
   const [selectedService, setSelectedService] = useState<Service | null>(null);
-  const [lang, setLang] = useState<Language>('en');
+  const [lang, setLang] = useState<Language>(getDefaultLanguage());
   const [showPrivacy, setShowPrivacy] = useState(false);
 
   useEffect(() => {
@@ -470,7 +490,14 @@ export default function App() {
                 </p>
               </header>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
+                  <VideoModal 
+                    videoUrl={YOTUBE_URL_TRIPS}
+                    className="border-2 border-vgoire-gold/30"
+                  />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 {SERVICES.map((service) => (
                   <ServiceCard 
                     key={service.id} 
@@ -482,14 +509,19 @@ export default function App() {
               </div>
 
               <footer className="mt-24 pt-12 border-t border-white/10 flex flex-col items-center gap-8">
-                <a 
-                  href={OFFICIAL_WEBSITE_URL}
+               <a 
+                  href={INSTAGRAM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="gold-button flex items-center gap-3 px-8"
                 >
-                  <Globe className="w-5 h-5" />
-                  {t.visitWebsite}
+                <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                  </svg>
+                </span>
+                {t.visitWebsite}
                 </a>
                 <div className="text-center text-white/40 text-xs space-y-4">
                   <p>© {new Date().getFullYear()} VGOIRE. All rights reserved.</p>
