@@ -466,7 +466,8 @@ export const SERVICES: Service[] = [
       'https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&q=80&w=1200',
       'https://images.unsplash.com/photo-1599640842225-85d111c60e6b?auto=format&fit=crop&q=80&w=1200',
       'https://images.unsplash.com/photo-1500021804447-2ca2eaaaabeb?auto=format&fit=crop&q=80&w=1200'
-    ],
+    ], https://unsplash.com/pt-br/fotografias/navio-de-cruzeiro-branco-durante-o-dia-UdxJSRD6UNM 
+      
     translations: {
       en: { title: 'CRUISES', description: 'Luxury cruises with a variety of activities for families to explore beautiful destinations (Partner: Qualitours).' },
       es: { title: 'CRUCEROS', description: 'Cruceros de lujo con una variedad de actividades para familias para explorar destinos hermosos (Socio: Qualitours).' },
